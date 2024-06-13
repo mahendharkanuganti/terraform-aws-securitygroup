@@ -27,11 +27,6 @@ variable "sg_tags" {
   
 }
 
-variable "inbound_rules" {
-    type = list
-    default = []
-}
-
 variable "outboud_rules" {
     type = list
     default = [
@@ -44,3 +39,8 @@ variable "outboud_rules" {
     ]
 }
 
+variable "ingress_rules" {
+    type = list
+    default = []
+  
+}
